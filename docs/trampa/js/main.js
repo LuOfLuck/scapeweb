@@ -20,7 +20,7 @@ verificar.onclick = () => {
 		abrir_popou.onclick = null
 		alert("clave correcta :)")
 		button_exit.onclick()
-		move.style.width = "30px"
+		move.style.width = "50px"
 	}
 }
 
