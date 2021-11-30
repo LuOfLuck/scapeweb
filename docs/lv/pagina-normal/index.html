@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	 <script src="https://kit.fontawesome.com/9ec8210292.js" crossorigin="anonymous"></script>
+	<title>Home</title>
+</head>
+<body>	
+	<section class="capa" id="id_capa">
+		<div class="move" id="id_move"></div>
+		<div id="id_popou" class="popou">
+			<div class="popou__cont">
+				<form  class="popou__form"  onsubmit="return false">
+					<p>escribe la <label for="id_clave">clave</label> </p>
+					<p>¿que clave? ni idea ah</p>
+					<p>¿como que no puedes escribir?</p>
+					<div class="position">
+						<div class="popou__form__bajo">
+							<input type="text" name="clave" id="id_clave" class="form__input__text" placeholder="click aqui">
+						</div>
+						<div class="popou__form__arriba">
+						</div>
+					</div>
+					<input type="submit" value="verificar" id="verificar" class="form__input__submit">
+				</form>
+				<button class="popou__cont__exit" id="exit__popou">x</button>
+			</div>
+		</div>
+		<header class="capa__header">
+			<nav class="header__nav">
+				<h1 class="header__nav__h1">Aca no hay nada oculto</h1>
+				<ul class="header__nav__ul">
+					<li class="header__nav__ul__li">Home</li>
+					<li class="header__nav__ul__li">Sobre nosotros</li>
+					<li class="header__nav__ul__li" onclick="abrirPopou()" id="abrir_popou">Exit</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="capa__body">
+			<h1 class="body__h1">Una pagina normal</h1>
+			<p class="body__p">
+				Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Fugiat, qui, fuga illum veniam ipsum iusto blanditiis pariatur id nobis repudiandae magnam recusandae quos quo autem repellendus? Enim fugit, ipsum sapiente.
+				Ipsa recusandae similique quod id quos ullam voluptatem commodi dignissimos consequatur aliquam, numquam nulla reiciendis neque deleniti. Tempore, rerum, cumque natus obcaecati quia repellendus laudantium ea, neque excepturi fugiat, commodi.
+			</p>
+			<p class="body__p">
+				Quasi obcaecati vero aliquam pariatur eum placeat omnis, delectus quod autem ut quidem animi accusamus cupiditate deleniti et nesciunt earum rerum, asperiores maxime! Unde facilis porro veritatis error, provident earum?
+				Perspiciatis labore animi necessitatibus dolorum sint. Autem rerum, nulla, deserunt delectus, laudantium possimus accusamus aut mollitia nostrum, ratione eveniet sapienteo.
+			</p>
+			<p class="body__p">
+				Error nemo tempora, rerum mollitia impedit unde, illum in quam at. Aliquam, placeat. Aspernatur voluptatem reprehenderit delectus, porro neque deserunt similique repellendus aliquam expedita sed voluptate, quia laboriosam ab non.
+				Distinctio, dolorem aliquid, repudiandae deserunt possimus quia? Tenetur, consectetur ab eius hic vel molestiae necessitatibus eum quae nulla assumenda cum perferendis quibusdam reiciendis rerum fuga possimus repellendus. A, culpa, voluptatibus!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur delectus ut ullam, incidunt! Sapiente, sit, labore. Qui obcaecati minus, earum natus quae iure, unde ullam facere quod adipisci voluptatibus.
+				Mollitia, nulla. Facere corrupti sed obcaecati quidem commodi nulla voluptatem itaque deleniti, odit, explicabo sequi, illum fugiat vero ab consequuntur nisi, quasi perferendis dolor ea eos hic! Commodi quam, necessitatibus?
+				Id veritatis, excepturi deleniti necessitatibus cumque illo, facere, quo natus animi molestiae accusantium dignissimos vero dolores unde quod dolorum odit earum non accusamus aliquid autem quibusdam sit? Ipsa aperiam, nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Tempore fuga ratione ducimus neque quod sequi quam praesentium, sapiente minima vitae animi nemo temporibus aut totam omnis vel? Non, veniam, itaque!
+				Neque dolorem qui ipsa cumque esse quis, suscipit possimus accusamus quasi fugiat quam quae ut earum veniam eaque error unde beatae. Corrupti id laborum ab, autem vitae tenetur mollitia adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vero omnis doloribus, ratione in optio modi, soluta saepe odio? Voluptatibus saepe animi, maxime ex deserunt, cupiditate. Unde, accusamus blanditiis molestias.
+				Ea iusto, veniam accusantium, placeat impedit pariatur nostrum iure quidem inventore alias consequuntur rerum, fugit debitis necessitatibus deserunt ipsum aliquid beatae suscipit a. Nulla ipsa laudantium vero quisquam quia perspiciatis!
+				Quod sed ut excepturi voluptatum eius totam rerum, doloremque esse vitae quia magnam tempora neque impedit ea sequi dolor aut voluptas animi, porro facere sapiente quaerat dolorem perspiciatis! Quasi, dolore.
+			</p>
+			<div class="capa__body__div">
+				<p>clave: callefalsa123</p>
+				<div class="capa__body__div__before">
+					<p>oh... mira una parte oculta que misterio... </p>
+					<p><s>ironia</s></p>
+				</div>
+			</div>
+
+		</section>
+		<footer class="capa__footer">
+			<div class="footer__redes">
+	            <div class="list">
+	                <div class="list__element">
+	                    <img src="img/facebook.png" alt="Facebook de Lu CR" onclick="alert('https://www.facebook.com/lu.de.luck/')">
+	                </div>
+	                <div class="list__element">
+	                   <img src="img/instagram.png" alt="instagramde lugically_cosmic" onclick="alert('@lugically_cosmic2.2 (seguime soy copado)')">
+	                </div>
+	                <div class="list__element">
+	                    <img src="img/github.png" alt="github de LuOfLuck" onclick="alert('@LuOfLuck')">
+	                </div>
+            	</div>
+        	</div>
+        	<p class="footer__legal">Created for Guerrero Lucas ©2021</p>
+		</footer>
+	</section>
+	<section class="content">
+		<h1>¡Lo lograste!</h1>
+		<p>felicidades</p>
+		<a href="../../index.html" class="content__a"><p>finalizar</p></a>
+	</section>
+	<script src="../../js/musica.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
