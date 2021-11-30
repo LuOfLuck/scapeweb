@@ -1,5 +1,5 @@
 if(window.location.host == "www.scapeweb.online"){
-	var ruta = window.location.host
+	var ruta = "https://" + window.location.host
 }else{
 	var ruta = "file:///C:/Users/Lucas/Desktop/divertido/docs/"
 }
