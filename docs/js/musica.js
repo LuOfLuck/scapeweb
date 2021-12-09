@@ -34,7 +34,7 @@ document.addEventListener("click", (e)=>{
 })
 
 const pausar_o_reproducir = () =>{
-	if (iconMusica.classList.contains("fa-pause")){
+	if (/\ fa-pause\b/g.test(iconMusica.className)){
 		iconMusica.classList.replace("fa-pause", "fa-play");
 		musica.pause()
 	}else{
@@ -43,7 +43,7 @@ const pausar_o_reproducir = () =>{
 	}
 }
 const efectosSonds = () => {
-	if (iconEfectos.classList.contains("fa-volume-mute")){
+	if (/\ fa-volume-mute\b/g.test(iconEfectos.className)){
 		iconEfectos.classList.replace("fa-volume-mute", "fa-volume-up");
 		audioClic.volume = 1
 		audioClicBueno.volume = 1
