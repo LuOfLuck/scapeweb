@@ -9,7 +9,7 @@ const capa = document.getElementById("capa")
 const orden = [8,5,4,2,9,3,6,7,1,9]
 const claveBarra = [-2, -1, 3, 3]
 var active = 0
-var claveGlobal = "consectetur"
+var claveGlobal = "espinosa"
 var activado = false
 var completado = false
 
@@ -58,25 +58,29 @@ buttonActive.addEventListener("click", ()=>{
 			alert("¿activado?")
 			activado = true
 		}else{
+			console.log(inputClave.value)
 			alert("¿activar? emmmm...")
 		}
 	}else{
+		buttonActive.disabled = true
 		alert("emmmmm...")
-		id_libro__texto.classList.add("text--orange")
+		id_libro__texto.classList.add("text--active")
 		activarBotones()
 		activarBarras()
-		ctivado = false
+		activado = false
 
 	}
 })
+
 const moverBarra = (barra, valor) =>{
 	let position = parseInt(barra.position)
 
 	if((position > -3 && position < 3) || ((position > -3 && valor < 0) || (position < 3 && valor > 0))){
 		let direction = position + valor
 		barra.position = direction
+		barra.innerHTML = direction;
 		barra.style.right = `${direction * 50}px`
-		alert(direction)
+		// alert(direction)
 		return true
 	}else {
 	 	alert("no")	
@@ -124,4 +128,3 @@ const activarFinGame = ()=>{
 		capa.style.transform = `translateX(${valor}px)`
 	})
 }
-activarFinGame()
