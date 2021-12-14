@@ -3,18 +3,19 @@ if(window.location.host == "www.scapeweb.online"){
 }else{
 	var ruta = "file:///C:/Users/Lucas/Desktop/divertido/docs/"
 }
-document.write(`
+document.body.insertAdjacentHTML('beforeend', `
 	<div class="audio" style="z-index:1000;">
 		<audio id="audio_clic" src="${ruta}/musica/clic_normal.mp3"></audio>
 		<audio id="audio_clic_bueno" src="${ruta}/musica/clic_bueno.mp3"></audio>
 		<audio id="musica" src="${ruta}/musica/index.mp3"></audio>
 		<div id="id_audio_estado">
-			<i id="icon_musica" class="fas fa-play"></i>
-			<i id="icon_efectos" class="fas fa-volume-up"></i>
+			<i id="icon_musica" class="icon-music fas fa-play"></i>
+			<i id="icon_efectos" class="icon-music fas fa-volume-up"></i>
 		</div>
 		
 	</div>
-`)
+`);
+
 console.log(window.location.href, ruta)
 const musica = document.getElementById("musica");
 const iconMusica = document.getElementById("icon_musica");

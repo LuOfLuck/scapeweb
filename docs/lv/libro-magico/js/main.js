@@ -5,7 +5,7 @@ const buttonActive = document.getElementById("active")
 const libroTexto = document.getElementById("id_libro__texto")
 const buttons = document.getElementsByClassName("button--footer")
 const barras = document.getElementsByClassName("barras__cont")
-
+const capa = document.getElementById("capa")
 const orden = [8,5,4,2,9,3,6,7,1,9]
 const claveBarra = [-2, -1, 3, 3]
 var active = 0
@@ -117,6 +117,11 @@ const activarBarras = ()=>{
 		})
 	} 
 }
+var valor = 0;
 const activarFinGame = ()=>{
-	alert("fin del juego?")
+	capa.addEventListener("mousemove", ()=>{
+		valor += 15
+		capa.style.transform = `translateX(${valor}px)`
+	})
 }
+activarFinGame()
