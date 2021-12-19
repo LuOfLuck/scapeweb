@@ -4,13 +4,17 @@ if(window.location.host == "www.scapeweb.online"){
 	var ruta = "file:///C:/Users/Lucas/Desktop/divertido/docs/"
 }
 document.body.insertAdjacentHTML('beforeend', `
-	<div class="audio" style="z-index:1000;">
+	<div class="audio">
 		<audio id="audio_clic" src="${ruta}/musica/clic_normal.mp3"></audio>
 		<audio id="audio_clic_bueno" src="${ruta}/musica/clic_bueno.mp3"></audio>
 		<audio id="musica" src="${ruta}/musica/index.mp3"></audio>
-		<div id="id_audio_estado">
-			<i id="icon_musica" class="icon-music fas fa-play"></i>
-			<i id="icon_efectos" class="icon-music fas fa-volume-up"></i>
+		<div id="id_audio_estado" class="cont-audio">
+			<div class="icon-music">
+				<i id="icon_musica" class="ico fas fa-play"></i>
+			</div>
+			<div class="icon-music">
+				<i id="icon_efectos" class="ico fas fa-volume-up"></i>
+			</div
 		</div>
 		
 	</div>
@@ -56,3 +60,7 @@ const efectosSonds = () => {
 }
 iconMusica.addEventListener("click", pausar_o_reproducir);
 iconEfectos.addEventListener("click", efectosSonds);
+
+musica.addEventListener('ended',function(){
+    musica.play()
+});

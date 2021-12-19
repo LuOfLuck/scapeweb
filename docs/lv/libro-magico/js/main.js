@@ -128,3 +128,4 @@ const activarFinGame = ()=>{
 		capa.style.transform = `translateX(${valor}px)`
 	})
 }
+// activarFinGame()
