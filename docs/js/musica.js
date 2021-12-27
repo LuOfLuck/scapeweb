@@ -1,8 +1,5 @@
-if(window.location.host == "www.scapeweb.online"){
-	var ruta = "https://" + window.location.host
-}else{
-	var ruta = "file:///C:/Users/Lucas/Desktop/divertido/docs/"
-}
+var ruta = (window.location.host == "www.scapeweb.online")?"https://" + window.location.host:"file:///C:/Users/Lucas/Desktop/divertido/docs/"
+
 document.body.insertAdjacentHTML('beforeend', `
 	<div class="audio">
 		<audio id="audio_clic" src="${ruta}/musica/clic_normal.mp3"></audio>

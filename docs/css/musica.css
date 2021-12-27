@@ -34,6 +34,9 @@
 	display: block;
 }
 @media (max-width:1008px){
+	body{
+		font-size: 14px;
+	}
 	.audio{
 		top: 25px; 
 		left: 45px;
@@ -44,6 +47,9 @@
 	}
 }
 @media (max-width:768px){
+	body{
+		font-size: 12px;
+	}
 	.audio{
 		top: 15px; 
 		left: 35px;
@@ -61,5 +67,8 @@
 	.icon-music{
 		width: 30px;
 		height: 30px;
+	}
+	body{
+		font-size: 10px;
 	}
 }

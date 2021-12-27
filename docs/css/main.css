@@ -10,6 +10,7 @@
 	--blanco: #E8F3F1;
 	--violeta: #936C82;
 	--amarillo:  #CFC44F;
+	--orange:  #E67E22;
 }
 body{
 	/*background-image: linear-gradient(
@@ -53,21 +54,45 @@ body{
 	z-index: 100;
 }
 .con_niveles__block{
-	background-color: var(--violeta);
-	/*backdrop-filter: blur(10px);*/
+	background-image: linear-gradient(white 5%, var(--violeta));
 	z-index: 80;
-	height: 100vh;
+	height: 102vh;
+	overflow-y: auto;
+	/*transform: translateY(0%);*/
+	scrollbar-width: thin;          /* "auto" or "thin" */
+ 	scrollbar-color: white transparent;
+}
+.con_niveles__block::-webkit-scrollbar {
+    -webkit-appearance: none;
 }
 
+.con_niveles__block::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.con_niveles__block::-webkit-scrollbar-button:increment,.con_niveles__block::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.con_niveles__block::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.con_niveles__block::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.con_niveles__block::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
 .con_niveles__svg{
 	background-color: white;
 	border-radius: 50%;
 	padding: 15px 15px 15px 15px;
 	margin-top: 0px;
 }
-.svg__icon{
-	cursor: pointer;
-}
+
 .con_niveles__abrir{
 	width: 100%;
 	height: 40px;
@@ -75,13 +100,16 @@ body{
 	justify-content: center;
 	background-color: white;
 	position: relative;
+	transition: 3s;
 }
 .svg{
 	position: absolute;
 	top: -40px;
 	background-color: white;
+	cursor: pointer;
 	padding: 20px;
 	border-radius: 50%;
+	transition: 3s;
 }
 
 .block__titulo__h2{
@@ -92,10 +120,10 @@ body{
 }
 .block__levels{
 	width: 80%;
-	margin: auto;
+	margin: 0px auto 40px auto;
 	display: flex;
 	flex-direction: row;
-	max-height: 250px;
+	max-height: 300px;
 	overflow-x: auto;
 	overflow-y: hidden;	
 }
@@ -111,7 +139,7 @@ body{
 	flex-direction: column;
 	height: auto;
 	width: 200px;
-	margin: auto;
+	margin: 0px 30px;
 	padding: 25px 20px;
 	border-radius: 5px;
 	background-color: ;
@@ -129,11 +157,14 @@ body{
 .level__true{
 	background-image: linear-gradient(transparent 15%, var(--azul-verde) );
 }
-
+.level__cofres{
+	background-image: linear-gradient(transparent 15%, var(--orange) );
+}
 .level__false{
 	height: 60px;
 	background-color: var(--gris-obscuro);
 	color: white;
+	margin: auto;
 }
 .level__false .level__titulo{
 	color: white;
@@ -147,11 +178,24 @@ body{
 	font-family: cursive;
 	border-radius: 25px;
 	padding: 5px 30px;
+	margin: 15px auto 0px auto; 
 }
 .level__button:hover{
 	transition: .3s;
 	background-color: var(--amarillo);
 	color: white;
+}
+.form{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.form__input__text{
+	border-radius: 20px;
+	border:  0px;
+	height: 25px;
+	text-align: center;
 }
 .content{
 	min-height: 100vh;
@@ -257,6 +301,10 @@ body{
 .footer__icon:hover{
 	background-color: var(--amarillo);
 	color: white;
+}
+
+.scoll_back{
+	transition: 3s;
 }
 @media (max-width:1008px){
 	body{
