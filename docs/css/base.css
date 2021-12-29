@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+:root{
+	--gris: #b6cacd;
+	--azul-verde: #4FCFC4;
+	--blanco: #E8F3F1;
+	--violeta: #936C82;
+	--amarillo:  #CFC44F;
+	--orange:  #E67E22;
+	--red:  #B8424C;
+}
+body{
+	font-size: 25px;
+	font-family: 'Indie Flower', cursive;
+	z-index: 20;
+}
+.titulo__h1{
+	text-align: center;
+	font-size: 2.5em;
+	margin-bottom: 50px;
+}
+@media (max-width:1008px){
+	body{
+		font-size: 23px;
+
+	}
+}
+@media (max-width:768px){
+	body{
+		font-size: 20px;
+
+	}
+}
+@media (max-width:500px){
+	body{
+		font-size: 18px;
+
+	}
+}

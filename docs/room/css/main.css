@@ -1,0 +1,55 @@
+@import url("../../css/base.css");
+.content{
+	background-image: linear-gradient(
+		var(--blanco) 5%, 
+		var(--azul-verde) 100vh,
+		var(--azul-verde) 
+	);
+	min-height: 100vh;
+	/*color: ;*/
+}
+.table {
+  border-collapse: collapse;
+  margin: auto;
+}
+.table__tr__td{
+	border: 4px solid black;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+}
+.table__tr__td:hover{
+	/*background-color: var(--amarillo);*/
+}
+.block{
+	background-color: var(--gris);
+}
+.you{
+	background-color: var(--orange);
+}
+.finally{
+	background-color: var(--red);
+}
+.oculto{
+	border: 0;
+	color: transparent;
+}
+
+@media (max-width:1008px){
+	.table__tr__td{
+		width: 120px;
+		height: 120px;
+	}
+}
+@media (max-width:768px){
+	.table__tr__td{
+		width: 90px;
+		height: 90px;
+	}
+}
+@media (max-width:500px){
+	.table__tr__td{
+		width: 60px;
+		height: 60px;
+	}
+}

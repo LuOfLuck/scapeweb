@@ -19,13 +19,11 @@ document.addEventListener("scroll", ()=>{
 })
 
 let formsLength = forms.length;
-
 const claves = [
 	{"clave":"LucasTeQuiere", "url":"escrituras/feliz-2022.html"},
 	{"clave":"EllaNoTeQuiere", "url":"escrituras/feliz-año-nuevo.html"},
 ]
 var ruta = (window.location.host == "www.scapeweb.online")?"https://" + window.location.host:"file:///C:/Users/Lucas/Desktop/divertido/docs/"
-
 for (let i = 0; i < formsLength; i++){
 	forms[i].addEventListener("click", (e)=>{
 		let target = e.target || e.srcElement;

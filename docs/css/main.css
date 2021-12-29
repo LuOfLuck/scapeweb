@@ -1,29 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-*{
-	margin: 0;
-	padding: 0;
-	outline: none;
-}
-:root{
-	--gris: #b6cacd;
-	--azul-verde: #4FCFC4;
-	--blanco: #E8F3F1;
-	--violeta: #936C82;
-	--amarillo:  #CFC44F;
-	--orange:  #E67E22;
-}
-body{
-	/*background-image: linear-gradient(
-		var(--blanco) 25vh, 
-		var(--azul-verde) 97vh,
-		var(--violeta) 100vh,
-		var(--violeta) 180vh,
-		var(--azul-verde) 181vh
-	);*/
-	font-size: 25px;
-	font-family: 'Indie Flower', cursive;
-	z-index: 20;
-}
+
 .content{
 	background-image: linear-gradient(
 		var(--blanco) 25%, 
@@ -211,11 +187,7 @@ body{
 .content__titulo{
 	margin: 40px 0 10px 0;
 }
-.titulo__h1{
-	text-align: center;
-	font-size: 2.5em;
-	margin-bottom: 50px;
-}
+
 
 .description{
 	height: auto;
@@ -307,10 +279,6 @@ body{
 	transition: 3s;
 }
 @media (max-width:1008px){
-	body{
-		font-size: 23px;
-
-	}
 	.content__block{
 		width: 80%;
 	}
@@ -338,10 +306,7 @@ body{
 	}
 }
 @media (max-width:768px){
-	body{
-		font-size: 20px;
 
-	}
 	.content__block{
 		width: 70%;
 	}
@@ -369,10 +334,6 @@ body{
 	}
 }
 @media (max-width:500px){
-	body{
-		font-size: 18px;
-
-	}
 	.description{
 		flex-direction: column;
 		font-size: 16px;
